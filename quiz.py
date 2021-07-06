@@ -1,9 +1,12 @@
 import random
 
 #quiz
-pelaatko = input ("Haluatko pelata? Vastaa kyllä tai ei")
-if pelaatko=="kyllä":
-    pass
+play = input ("Do you want to play? Answer yes or no:")
+if play=="yes":
+    amount=len(questions_list)
+    while amount > 0:
+        new_question()
+        amount-=1
 
 
 questions_list = [
