@@ -10,7 +10,7 @@ questions_list = [
 
 def new_question():
     question_number = random.randint(0, len(questions_list)-1)
-    question = questions_list[question_number]
+    question = questions_list[question_number][0]
     answer_options = questions_list[question_number][1] + questions_list[question_number][2] + questions_list[question_number][3] + questions_list[question_number][4]
     correct_answer = questions_list[question_number][5]
     print(question)
