@@ -1,13 +1,5 @@
 import random
 
-#quiz
-play = input ("Do you want to play? Answer yes or no:")
-if play=="yes":
-    amount=len(questions_list)
-    while amount > 0:
-        new_question()
-        amount-=1
-
 
 questions_list = [
     ["When do cherry trees blossom?", "1: Winter  ", "2: Spring  ", "3: Summer  ", "4: Autumn  ", 2],
@@ -27,3 +19,14 @@ def new_question():
         print("Correct!")
     else:
         print("Sorry, wrong")
+    questions_list.pop(question_number)
+
+#quiz
+play = input ("Do you want to play? Answer yes or no:")
+if play=="yes":
+    amount=len(questions_list)
+    while amount > 0:
+        new_question()
+        amount-=1
+
+
