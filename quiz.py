@@ -20,7 +20,7 @@ def new_question():
     correct_answer = questions_list[question_number][5]
     print(question)
     player_answer = input(answer_options + "\n")
-    if player_answer == correct_answer:
+    if int(player_answer) == correct_answer:
         print("Correct!")
     else:
         print("Sorry, wrong")
