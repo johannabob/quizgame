@@ -1,5 +1,5 @@
 import random
-
+points = 0
 
 questions_list = [
     ["When do cherry trees blossom?", "1: Winter  ", "2: Spring  ", "3: Summer  ", "4: Autumn  ", 2],
@@ -17,6 +17,7 @@ def new_question():
     player_answer = input(answer_options + "\n")
     if int(player_answer) == correct_answer:
         print("Correct!")
+        points += 1
     else:
         print("Sorry, wrong")
     questions_list.pop(question_number)
@@ -28,5 +29,7 @@ if play=="yes":
     while amount > 0:
         new_question()
         amount-=1
+    print(f"Thanks for playing! You got {points} points.")
+
 
 
