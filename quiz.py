@@ -34,3 +34,6 @@ if play=="yes":
         amount-=1
 
     print(f"Thanks for playing! You got {points} points out of {total_q}")
+#added a print for when the player is answering no
+else:
+    print("Ok. Bye bye.")
